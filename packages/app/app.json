@@ -1,8 +1,8 @@
 {
   "expo": {
-    "scheme": "walletapp",
+    "scheme": "hippiesmarts",
     "name": "walletapp",
-    "slug": "walletapp",
+    "slug": "hippiesmarts",
     "owner": "hippiesmarts123",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -36,7 +36,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "64e199cc-26e3-4ae2-831e-e18a5b7346bd"
+        "projectId": "c3fcaea0-b247-43dc-99cc-9e63d20ba3f7"
       }
     }
   }
