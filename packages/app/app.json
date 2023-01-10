@@ -1,9 +1,9 @@
 {
   "expo": {
-    "scheme": "onekey-wallet",
-    "name": "OneKey Wallet",
-    "slug": "OneKey-Wallet",
-    "owner": "onekeyhq",
+    "scheme": "walletapp",
+    "name": "walletapp",
+    "slug": "walletapp",
+    "owner": "hippiesmarts123",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -36,7 +36,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "640c3c38-d160-48c3-b4a3-40d4fc8aeb08"
+        "projectId": "64e199cc-26e3-4ae2-831e-e18a5b7346bd"
       }
     }
   }
