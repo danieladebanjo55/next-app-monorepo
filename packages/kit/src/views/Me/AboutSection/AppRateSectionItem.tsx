@@ -43,13 +43,12 @@ const AppRateSectionItem: FC<{ onAfterOnpenReview: () => void }> = ({
         flexDirection="row"
         alignItems="center"
         py={4}
-        px={{ base: 4, md: 6 }}
+        px={{ base: 0, md: 0 }}
         borderBottomWidth="1"
         borderBottomColor="divider"
-        onPress={onPress}
       >
-        <Icon name="StarOutline" />
-        <Text
+        {/* <Icon name="StarOutline" /> */}
+        {/* <Text
           typography={{ sm: 'Body1Strong', md: 'Body2Strong' }}
           flex={1}
           mx={3}
@@ -57,10 +56,10 @@ const AppRateSectionItem: FC<{ onAfterOnpenReview: () => void }> = ({
           {intl.formatMessage({
             id: 'form__rate_our_app',
           })}
-        </Text>
-        <Box>
+        </Text> */}
+        {/* <Box>
           <Icon name="ChevronRightMini" color="icon-subdued" size={20} />
-        </Box>
+        </Box> */}
       </Pressable>
     );
   }

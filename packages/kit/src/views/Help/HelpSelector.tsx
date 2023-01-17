@@ -237,14 +237,14 @@ const HelpSelector: FC = () => {
         onChange={onChange}
         renderTrigger={() => (
           <Center
-            width="50px"
-            height="50px"
+            width="0px"
+            height="0px"
             bg="action-secondary-default"
             borderRadius="25px"
             borderWidth="1px"
             borderColor="border-default"
           >
-            <Icon size={24} name="QuestionMarkCircleMini" />
+            <Icon size={0} name="QuestionMarkCircleMini" />
           </Center>
         )}
       />

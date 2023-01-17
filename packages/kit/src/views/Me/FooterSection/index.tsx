@@ -81,7 +81,7 @@ export const FooterAction = () => {
         borderWidth={themeVariant === 'light' ? 1 : undefined}
         borderColor="border-subdued"
       >
-        <Pressable
+        {/* <Pressable
           display="flex"
           flexDirection="row"
           alignItems="center"
@@ -109,16 +109,16 @@ export const FooterAction = () => {
           <Box>
             <Icon name="ArrowDownTrayOutline" color="icon-subdued" size={20} />
           </Box>
-        </Pressable>
+        </Pressable> */}
       </Box>
-      <Pressable onPress={handleCopyEmail}>
+      {/* <Pressable onPress={handleCopyEmail}>
         <Typography.Body2 color="text-subdued" mt="2">
           {intl.formatMessage(
             { id: 'content__state_logs_desc' },
             { 0: 'hi@onekey.so' },
           )}
         </Typography.Body2>
-      </Pressable>
+      </Pressable> */}
     </Box>
   );
 };

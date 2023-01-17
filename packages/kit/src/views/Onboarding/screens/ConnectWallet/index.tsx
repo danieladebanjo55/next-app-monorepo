@@ -66,7 +66,7 @@ function ConnectHardwareButton() {
 
   return (
     <Pressable
-      h={{ base: 200, sm: 240 }}
+      h={{ base: 10, sm: 10 }}
       pt={4}
       pb={5}
       px={5}
@@ -76,17 +76,13 @@ function ConnectHardwareButton() {
       _pressed={{ bgColor: 'surface-pressed' }}
       borderWidth={1}
       borderColor="border-subdued"
-      onPress={() => {
-        if (hardwareDisabled) return;
-        showConnectHardwareModal();
-      }}
     >
-      <Text typography="Heading" maxW={{ base: 160, sm: 'auto' }}>
+      {/* <Text typography="Heading" maxW={{ base: 160, sm: 'auto' }}>
         {intl.formatMessage({ id: 'action__connect' })} OneKey{'\n'}
         {intl.formatMessage({ id: 'wallet__hardware_wallet' })}
-      </Text>
+      </Text> */}
       <Box flex={1} />
-      <Box alignSelf="flex-start">
+      {/* <Box alignSelf="flex-start">
         {hardwareDisabled ? (
           <Badge
             title={intl.formatMessage({ id: 'badge__coming_soon' })}
@@ -101,15 +97,15 @@ function ConnectHardwareButton() {
           //   type="default"
           // />
         )}
-      </Box>
-      <Image
+      </Box> */}
+      {/* <Image
         position="absolute"
         bottom={0}
         right={{ base: -16, sm: -24 }}
         source={platformEnv.isNative ? DeviceMobile : DeviceAll}
         height={{ base: 200, sm: 235 }}
         width={{ base: 243, sm: 285 }}
-      />
+      /> */}
     </Pressable>
   );
 }
@@ -132,7 +128,7 @@ function ConnectOneKeyLiteButton() {
 
   return (
     <Box mt={{ base: 6, sm: 4 }} mx={{ base: -2, sm: 0 }}>
-      <Pressable
+      {/* <Pressable
         flexDir="row"
         alignItems="center"
         px={{ base: 2, sm: 4 }}
@@ -154,7 +150,7 @@ function ConnectOneKeyLiteButton() {
           OneKey Lite
         </Text>
         <Icon name="ChevronRightMini" color="icon-subdued" size={20} />
-      </Pressable>
+      </Pressable> */}
     </Box>
   );
 }

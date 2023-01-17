@@ -40,7 +40,7 @@ const TermsOfService: FC = () => {
       pb="16px"
       bgColor="background-default"
     >
-      <Text
+      {/* <Text
         maxW={{ base: '300px', sm: 'auto' }}
         mx="auto"
         textAlign="center"
@@ -70,7 +70,7 @@ const TermsOfService: FC = () => {
             ),
           },
         )}
-      </Text>
+      </Text> */}
     </Center>
   );
 };

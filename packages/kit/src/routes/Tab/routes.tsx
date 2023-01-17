@@ -20,6 +20,7 @@ import VolumeHaptic from '@onekeyhq/kit/src/views/Me/GenaralSection/VolumeHaptic
 import CloudBackup from '@onekeyhq/kit/src/views/Me/SecuritySection/CloudBackup';
 import CloudBackupDetails from '@onekeyhq/kit/src/views/Me/SecuritySection/CloudBackup/BackupDetails';
 import CloudBackupPreviousBackups from '@onekeyhq/kit/src/views/Me/SecuritySection/CloudBackup/PreviousBackups';
+import NewsPage from '@onekeyhq/kit/src/views/News/NewsPage';
 import NFTMarket from '@onekeyhq/kit/src/views/NFTMarket/Home';
 import Protected from '@onekeyhq/kit/src/views/Protected';
 import PushNotification from '@onekeyhq/kit/src/views/PushNotification';
@@ -146,6 +147,26 @@ export const tabRoutes: TabRouteConfig[] = [
         alwaysShowBackButton: true,
       },
     ],
+  },
+  {
+    name: TabRoutes.NewsPage,
+    component: NewsPage,
+    tabBarIcon: (focused) => (focused ? 'NewspaperSolid' : 'NewspaperOutline'),
+    translationId: 'section__news',
+    // children: [
+    //   {
+    //     name: HomeRoutes.ExploreScreen,
+    //     component: DiscoverHome,
+    //   },
+    //   {
+    //     name: HomeRoutes.DAppListScreen,
+    //     component: DAppList,
+    //   },
+    //   {
+    //     name: HomeRoutes.MyDAppListScreen,
+    //     component: MyDAppList,
+    //   },
+    // ],
   },
   {
     name: TabRoutes.Discover,

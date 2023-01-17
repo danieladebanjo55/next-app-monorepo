@@ -112,7 +112,7 @@ export class MdexQuoter implements Quoter {
       sellAmount: data.sellAmount,
       sellTokenAddress: data.sellTokenAddress,
       providers: networkProviderInfos[tokenIn.networkId] ?? [
-        { name: 'OneKey Swap' },
+        { name: 'LDD Pocket Swap' },
       ],
       arrivalTime: 15,
     };

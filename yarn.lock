@@ -5369,6 +5369,7 @@ __metadata:
     "@onekeyfe/onekey-aptos-provider": 1.1.15
     "@onekeyfe/onekey-cross-webview": 1.1.15
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.10
+    "@react-native-picker/picker": ^2.4.8
     "@types/chrome": ^0.0.161
     "@types/jest": ^29.2.3
     "@types/memoizee": ^0.4.8
@@ -6722,6 +6723,16 @@ __metadata:
   peerDependencies:
     "@react-native-firebase/app": 14.12.0
   checksum: cf1f2d73f15d910a8282d125a8a9da3dccaf5ff0853a5eb41a918611c36fc5d43953d34081665851111d69213fe8357755dcfb34cef79428e7eeb7bcd5b3a7ba
+  languageName: node
+  linkType: hard
+
+"@react-native-picker/picker@npm:^2.4.8":
+  version: 2.4.8
+  resolution: "@react-native-picker/picker@npm:2.4.8"
+  peerDependencies:
+    react: ">=16"
+    react-native: ">=0.57"
+  checksum: c2ac00b379a9a43188be53ce8e4eb849e6d02ad8a3afe18a88416d8d0d433ac33396eea34a6fdad27f8b4f8c88bc77b4a87fec146c99d987bd91244980762879
   languageName: node
   linkType: hard
 

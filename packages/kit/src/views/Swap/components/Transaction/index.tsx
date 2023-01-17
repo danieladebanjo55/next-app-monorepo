@@ -540,7 +540,7 @@ const Transaction: FC<TransactionProps & { showViewInBrowser?: boolean }> = ({
           <SwappingVia providers={tx.providers} />
         </TransactionField>
         <TransactionField
-          label={intl.formatMessage({ id: 'form__included_onekey_fee' })}
+          // label={intl.formatMessage({ id: 'form__included_onekey_fee' })}
         >
           <TransactionFee
             type={tx.quoterType}

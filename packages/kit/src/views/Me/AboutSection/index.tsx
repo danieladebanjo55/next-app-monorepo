@@ -148,11 +148,11 @@ export const AboutSection = () => {
             {settings.buildNumber ? `-${settings.buildNumber}` : ''}
           </Text>
         </Pressable>
-        {!platformEnv.isMas ? <AutoUpdateSectionItem /> : null}
+        {/* {!platformEnv.isMas ? <AutoUpdateSectionItem /> : null}
         {showRate ? (
           <AppRateSectionItem onAfterOnpenReview={checkShowAppReview} />
-        ) : null}
-        <Pressable
+        ) : null} */}
+        {/* <Pressable
           display="flex"
           flexDirection="row"
           alignItems="center"
@@ -182,8 +182,8 @@ export const AboutSection = () => {
           <Box>
             <Icon name="ChevronRightMini" color="icon-subdued" size={20} />
           </Box>
-        </Pressable>
-        <Pressable
+        </Pressable> */}
+        {/* <Pressable
           display="flex"
           flexDirection="row"
           alignItems="center"
@@ -213,7 +213,7 @@ export const AboutSection = () => {
           <Box>
             <Icon name="ChevronRightMini" color="icon-subdued" size={20} />
           </Box>
-        </Pressable>
+        </Pressable> */}
         <Pressable
           display="flex"
           flexDirection="row"
@@ -224,7 +224,7 @@ export const AboutSection = () => {
           borderBottomColor="divider"
           onPress={() =>
             openWebViewUrl(
-              'https://www.onekey.so',
+              'https://www.corel-jakes.netlify.app',
               intl.formatMessage({
                 id: 'form__website',
               }),
@@ -255,7 +255,7 @@ export const AboutSection = () => {
           px={{ base: 4, md: 6 }}
           borderBottomWidth="1"
           borderBottomColor="divider"
-          onPress={() => openLinkUrl('https://www.discord.gg/onekey')}
+          onPress={() => openLinkUrl('https://www.discord.gg/')}
         >
           <Icon name="DiscordOutline" />
           <Text
@@ -277,7 +277,7 @@ export const AboutSection = () => {
           alignItems="center"
           py={4}
           px={{ base: 4, md: 6 }}
-          onPress={() => openLinkUrl('https://www.twitter.com/onekeyhq')}
+          onPress={() => openLinkUrl('https://www.twitter.com/')}
         >
           <Icon name="TwitterOutline" />
           <Text

@@ -330,7 +330,7 @@ const SwapQuote = () => {
             mb="4"
           >
             <Typography.Body2 color="text-disabled" mr="2">
-              {intl.formatMessage({ id: 'form__included_onekey_fee' })}
+              {/* {intl.formatMessage({ id: 'form__included_onekey_fee' })} */}
             </Typography.Body2>
             <Box flex="1" flexDirection="row" justifyContent="flex-end">
               <TransactionFee

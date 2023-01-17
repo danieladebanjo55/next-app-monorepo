@@ -81,9 +81,9 @@ function SectionHeader({
   const intl = useIntl();
   const label = useMemo(() => {
     if (type === 'hd') return intl.formatMessage({ id: 'wallet__app_wallet' });
-    if (type === 'hw')
-      return intl.formatMessage({ id: 'wallet__hardware_wallet' });
-    return intl.formatMessage({ id: 'content__other' });
+    // if (type === 'hw')
+    //   return intl.formatMessage({ id: 'wallet__hardware_wallet' });
+    // return intl.formatMessage({ id: 'content__other' });
   }, [intl, type]);
 
   const showAddIconButton = shouldShowMiniCreateButton({ section });
@@ -245,25 +245,25 @@ function Body() {
               </Center>
             );
           }
-          if (section.type === EWalletDataSectionType.hw) {
-            text = intl.formatMessage({
-              id: 'action__connect_hardware_wallet' as any,
-            });
-            leftView = (
-              <Center
-                size={`${iconSize}px`}
-                borderWidth={2}
-                borderColor="border-default"
-                borderStyle="dashed"
-                borderRadius="full"
-              >
-                <Icon
-                  size={platformEnv.isNative ? 24 : 20}
-                  name={platformEnv.isNative ? 'LinkOutline' : 'LinkMini'}
-                />
-              </Center>
-            );
-          }
+          // if (section.type === EWalletDataSectionType.hw) {
+          //   text = intl.formatMessage({
+          //     id: 'action__connect_hardware_wallet' as any,
+          //   });
+          //   leftView = (
+          //     <Center
+          //       size={`${iconSize}px`}
+          //       borderWidth={2}
+          //       borderColor="border-default"
+          //       borderStyle="dashed"
+          //       borderRadius="full"
+          //     >
+          //       {/* <Icon
+          //         size={platformEnv.isNative ? 24 : 20}
+          //         name={platformEnv.isNative ? 'LinkOutline' : 'LinkMini'}
+          //       /> */}
+          //     </Center>
+          //   );
+          // }
           return (
             <>
               <Box px="8px">
@@ -273,7 +273,7 @@ function Body() {
                   renderTrigger={({ onPress }) => (
                     <Box mx="-8px">
                       <ListItemBase
-                        onPress={onPress}
+                        // onPress={onPress}
                         leftView={leftView}
                         text={text}
                       />

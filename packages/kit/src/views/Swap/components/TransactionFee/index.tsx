@@ -37,7 +37,7 @@ const TransactionFee: FC<TransactionFeeProps> = ({
       {isNoCharge(type) || (percentageFee && Number(percentageFee) === 0) ? (
         <Box flexDirection="column" alignItems="flex-end">
           <Text typography={typography} color="text-subdued" strikeThrough>
-            0.3%
+            {/* 0.3% */}
           </Text>
           <Text typography={typography} color="text-success">
             {intl.formatMessage({ id: 'form__free_limited_time' })}
@@ -45,7 +45,7 @@ const TransactionFee: FC<TransactionFeeProps> = ({
         </Box>
       ) : (
         <Text typography={typography} color="text-subdued">
-          {!percentageFee ? ' 0.3%' : `${formatPercentageFee(percentageFee)}%`}
+          {/* {!percentageFee ? ' 0.3%' : `${formatPercentageFee(percentageFee)}%`} */}
         </Text>
       )}
     </Box>

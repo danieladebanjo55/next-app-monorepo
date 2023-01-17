@@ -20,7 +20,7 @@ export default function OnLanding() {
   }, []);
   const onAndroidDownload = useCallback(() => {
     openLinkUrl(
-      'https://play.google.com/store/apps/details?id=so.onekey.app.wallet',
+      'https://play.google.com/',
     );
   }, [openLinkUrl]);
   const oniOSDownload = useCallback(() => {
@@ -29,7 +29,7 @@ export default function OnLanding() {
     );
   }, [openLinkUrl]);
   const onDesktopDownload = useCallback(() => {
-    openLinkUrl('https://onekey.so/download');
+    openLinkUrl('https://lddpay.com');
   }, [openLinkUrl]);
   const locationUrl = global?.location?.href || '';
   const autoLaunchAppUrl = useMemo(() => {
@@ -65,7 +65,7 @@ export default function OnLanding() {
   return (
     <Center w="full" h="full" bg="background-default">
       <Center maxW="375px" w="full" p="6">
-        <Icon name="BrandLogoIllus" size={90} />
+        {/* <Icon name="BrandLogoIllus" size={90} /> */}
         <Typography.DisplayLarge mt="8">
           {intl.formatMessage({ id: 'title__continuing_to_oneKey' })}
         </Typography.DisplayLarge>

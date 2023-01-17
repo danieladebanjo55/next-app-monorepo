@@ -43,9 +43,10 @@ const UpdateAlert: FC = () => {
   return enabled ? (
     <Box
       position="absolute"
-      width={isSmallScreen ? 'full' : '358px'}
-      left={isSmallScreen ? 0 : '288px'}
-      bottom={isSmallScreen ? '58px' : '32px'}
+      display="none"
+      // width={isSmallScreen ? 'full' : '358px'}
+      // left={isSmallScreen ? 0 : '288px'}
+      // bottom={isSmallScreen ? '58px' : '32px'}
       justifyContent="center"
       alignItems="center"
       px={{ base: 4, md: 0 }}
@@ -57,14 +58,14 @@ const UpdateAlert: FC = () => {
         py={4}
         bg="surface-default"
         borderRadius="xl"
-        borderWidth={0.5}
+        borderWidth={0}
         borderColor="border-subdued"
         shadow="depth.4"
       >
-        <Box mr="12px">
+        {/* <Box mr="12px">
           <Icon size={24} name="ArrowDownTrayOutline" color="icon-success" />
-        </Box>
-        <Box flex={1} mt={0.5}>
+        </Box> */}
+        {/* <Box flex={1} mt={0.5}>
           <Text flex={1} typography="Body2Strong" color="text-default">
             {intl.formatMessage(
               { id: 'msg__update_to_onekey_str_is_available' },
@@ -80,8 +81,8 @@ const UpdateAlert: FC = () => {
           >
             {intl.formatMessage({ id: 'action__update_now' })}
           </Button>
-        </Box>
-        <Pressable
+        </Box> */}
+        {/* <Pressable
           ml={4}
           padding={0.5}
           onPress={() => {
@@ -93,7 +94,7 @@ const UpdateAlert: FC = () => {
           alignSelf="flex-start"
         >
           <Icon size={20} name="XMarkOutline" color="icon-default" />
-        </Pressable>
+        </Pressable> */}
       </Box>
     </Box>
   ) : null;

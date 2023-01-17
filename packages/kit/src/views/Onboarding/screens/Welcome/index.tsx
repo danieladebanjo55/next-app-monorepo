@@ -3,12 +3,11 @@ import { useCallback, useEffect } from 'react';
 import { useNavigation } from '@react-navigation/core';
 import { useRoute } from '@react-navigation/native';
 import { useIntl } from 'react-intl';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import {
   Box,
   Hidden,
-  Icon,
   Image,
   PresenceTransition,
   Text,
@@ -19,6 +18,7 @@ import LogoMetaMask from '@onekeyhq/kit/assets/onboarding/logo_metamask.png';
 import LogoOneKey from '@onekeyhq/kit/assets/onboarding/logo_onekey.png';
 import LogoTokenPocket from '@onekeyhq/kit/assets/onboarding/logo_tokenpocket.png';
 import LogoTrezor from '@onekeyhq/kit/assets/onboarding/logo_trezor.png';
+
 import {
   AppUIEventBusNames,
   appUIEventBus,
@@ -32,6 +32,8 @@ import { RootRoutes } from '../../../../routes/routesEnum';
 import { setOnBoardingLoadingBehindModal } from '../../../../store/reducers/runtime';
 import Layout from '../../Layout';
 import { EOnboardingRoutes } from '../../routes/enums';
+
+import Vtuber from './image/v11.png';
 
 import PressableListItem from './PressableListItem';
 import TermsOfService from './TermsOfService';
@@ -122,6 +124,18 @@ const Welcome = () => {
     LogoTokenPocket,
   ];
 
+  const styles = StyleSheet.create({
+    warningText: {
+      position: 'absolute',
+      bottom: 0,
+      left: 0,
+      right: 0,
+      textAlign: 'center',
+      color: 'red',
+      fontWeight: 'bold',
+    },
+  });
+
   return (
     <>
       <Layout
@@ -131,13 +145,18 @@ const Welcome = () => {
         scaleFade
         disableAnimation={disableAnimation}
       >
-        <Icon name="BrandLogoIllus" size={48} />
+        <Image source={Vtuber}
+          style={{
+            resizeMode: 'center',
+            width: '100%',
+            height: 400,
+          }}
+        />
         <Text typography={{ sm: 'DisplayXLarge', md: 'Display2XLarge' }} mt={6}>
           {intl.formatMessage({ id: 'onboarding__landing_welcome_title' })}
-          {'\n'}
-          <Text color="text-subdued">
-            {intl.formatMessage({ id: 'onboarding__landing_welcome_desc' })}
-          </Text>
+        </Text>
+        <Text color="text-subdued">
+          {intl.formatMessage({ id: 'onboarding__landing_welcome_desc' })}
         </Text>
         <Box
           flexDir={{ sm: 'row' }}

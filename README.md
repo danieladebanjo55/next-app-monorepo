@@ -1,4 +1,4 @@
-# OneKey - Open Source Crypto Wallet
+# LDD Pocket - Open Source Crypto Wallet
 
 [![Github Stars](https://img.shields.io/github/stars/OneKeyHQ/app-monorepo?t&logo=github&style=for-the-badge&labelColor=000)](https://github.com/OneKeyHQ/app-monorepo/stargazers)
 [![Version](https://img.shields.io/github/release/OneKeyHQ/app-monorepo.svg?style=for-the-badge&labelColor=000)](https://github.com/OneKeyHQ/app-monorepo/releases)
@@ -70,7 +70,9 @@ Execute the following commands in the root directory and build target for produc
 
 - web: `cd packages/web && yarn build`, build the static files at packages/web/web-build, for production build, see [release-web.yml](./.github/workflows/release-web.yml) job for detail.
 - ios: using expo server to build, see [release-ios.yml](./.github/workflows/release-ios.yml) job for detail.
-- android: : using expo server to build, see [release-android.yml](./.github/workflows/release-android.yml) job for detail.
+- android: :use expo server to build, see [release-android.yml](./.github/workflows/release-android.yml) job for detail.
+- or use `cd packages/app/android && ENTRY_FILE=__generated__/AppEntry.js ./gradlew aR` to build in local.
+
 - desktop: : `cd packages/desktop && yarn build`, see [release-desktop.yml](./.github/workflows/release-desktop.yml) job for detail.
 - ext: `cd packages/ext && yarn build:all`, see [release-ext.yml](./.github/workflows/release-ext.yml) job for detail.
 
@@ -167,5 +169,5 @@ Check out where we are now!
 
 ## ⚖️ License
 
-OneKey is available under the [MIT](https://github.com/OneKeyHQ/app-monorepo/blob/onekey/LICENSE) license.
+LDD Pocketis available under the [MIT](https://github.com/OneKeyHQ/app-monorepo/blob/onekey/LICENSE) license.
 Free for commercial and non-commercial use.

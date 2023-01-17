@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>OneKey</string>
+	<string>LDDPocket</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,7 +26,7 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>so.onekey.app.wallet</string>
-				<string>onekey-wallet</string>
+				<string>LDDPocket-wallet</string>
 				<string>wc</string>
 				<string>ethereum</string>
 			</array>
@@ -56,7 +56,7 @@
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Use bluetooth to connect OneKey hardware devices.</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string>Use bluetooth peripheral to connect OneKey hardware devices.</string>
+	<string>Use bluetooth peripheral to connect LDD Pocket hardware devices.</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Use Camera to scan QR Code.</string>
 	<key>NSFaceIDUsageDescription</key>
